@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Player Music</title>
+</head>
+<body>
+   <main>
+        <img class="img-name">
+        <section class="conteiner-content">
+            <div class="descricao">
+                <h2 class="nome-music">Nome da music</h1>
+                <i class="nome-artista" >Nome do artista</i>
+            </div>
+            
+                
+            <div class="duracao">
+                <div class="tempo">
+                    <p class="inicio">0:00</p>
+                    <div class="barra">
+                        <progress value="0" max="1"></progress>
+                        <div class="ponto"></div>
+                    </div>
+                    <p class="fim">0:00</p>
+                </div>
+            </div>
+            <div class="player">
+                <i class="fa-sharp fa-solid fa-backward-step"></i>
+                <div class="bnt-play">
+                    <i class="fa-sharp fa-solid fa-circle-play "></i>
+                    <i class="fa-sharp fa-solid fa-circle-pause off"></i>
+                </div>
+                <i class="fa-sharp fa-solid fa-forward-step"></i>
+            </div>
+            <audio src="music/777-666.mp3"></audio>
+        </section>
+    </main>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/6ba954d6dc.js" crossorigin="anonymous"></script>
+</body>
+</html>

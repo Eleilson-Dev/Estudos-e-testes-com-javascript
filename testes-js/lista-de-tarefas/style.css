@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'kdam';
+    src: url(fontes/KdamThmorPro-Regular.ttf)format('truetype');
+}
+
+:root {
+    --fonte-principal: 'kdam';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+}
+
+body {
+    background: linear-gradient(90deg, rgba(65, 184, 131, 1)0%, rgba(0, 212, 255, 1)100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.conteiner {
+    border: 2px solid #fff;
+    padding: 30px 40px;
+    width: 35%;
+}
+
+.new-task-conteiner {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+}
+
+.new-task-conteiner input {
+    flex: 3;
+    font-size: 1em;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+}
+
+.new-task-conteiner input:focus {
+    outline: none;
+    border-color: #41b883;
+}
+
+.new-task-buttom {
+    flex: 1;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 100%;
+    border: none;
+    font-size: 1em;
+    background-color: #41b883;
+    color: #fff;
+    margin-left: 12px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.task-conteiner {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.task-item i {
+    background-color: #41b883;
+    color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.fa-trash-o {
+    cursor: pointer;
+}
+
+
+/* utilits */
+
+.error {
+    border: 2px solid red !important;
+}
+
+.error::placeholder {
+    color: red;
+}

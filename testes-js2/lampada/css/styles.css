@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: 0.3s;
+}
+
+main {
+    width: 30%;
+    height: 60vh;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.545);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main .lampada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.bi {
+    cursor: pointer;
+    font-size: 4em;
+}
+
+.bi-brightness-high-fill {
+    display: none;
+}
+
+.active .bi-brightness-high-fill {
+    display: block;
+}
+
+.active .bi-moon-fill {
+    display: none;
+}

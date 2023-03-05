@@ -1,0 +1,16 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-image: url(imgs/imagem-de-fundo.jpg);
+    background-size: cover;
+}
+
+#canvas {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(166, 248, 255);
+}

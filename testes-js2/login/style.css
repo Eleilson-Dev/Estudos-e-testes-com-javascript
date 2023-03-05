@@ -1,0 +1,16 @@
+body {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.oculto {
+    display: none;
+}
+
+.mostra {
+    display: flex;
+}
+

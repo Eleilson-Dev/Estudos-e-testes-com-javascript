@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Controle de Despesas</title>
+</head>
+
+<body>
+    <main>
+        <div class="saldo-atual">
+            <h3>SALDO ATUAL</h3>
+            <p id="saldo-atual">R$ 00,00</p>
+        </div>
+        <div class="valores">
+            <div class="Receitas">
+                <h4>RECEITAS</h4>
+                <p id="Receitas-value"> + R$ 00,00</p>
+            </div>
+            <div class="Despesas">
+                <h4>DESPESAS</h4>
+                <p id="Despesas-value"> - R$ 00,00</p>
+            </div>
+        </div>
+        <div class="transaçoes">
+            <h3>Transações</h3>
+        </div>
+        <div class="list">
+            <ul class="list-transactions">
+                <!-- <li class="plus">
+                    <i class="fa-solid fa-trash-can"></i>
+                    <p>salrio</p>
+                    <div class="plus-velue">
+                        <p>+ R$ 4359</p>
+                    </div>
+                </li>
+                <li class="minus">
+                    <i class="fa-solid fa-trash-can"></i>
+                    <p>plano de saude</p>
+                    <div class="minus-velue">
+                        <p>- R$ 437</p>
+                    </div>
+                </li> -->
+            </ul>
+            <div class="add-transactions">
+                <h3>Adicionar Transação</h3>
+            </div>
+            <div class="conteiner-form">
+                <form class="form" action="submit" autocomplete="off">
+                    <h3>Nome</h3>
+                    <input id="name-transaction" type="text" placeholder="Nome da transação">
+                    <h3>Valor</h3>
+                    <p>(Negativo Despesas, Positivo Receitas)</p>
+                    <input id="value-transaction" type="number" placeholder="Valor da transação">
+                    <input id="bnt-add" type="submit" value="Adicionar">
+                </form>
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/6ba954d6dc.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

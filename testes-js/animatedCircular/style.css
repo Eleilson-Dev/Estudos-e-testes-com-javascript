@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    min-height: 100vh;
+}
+
+.conteiner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    margin-left: 13px;
+    width: 64%; 
+    border: none;
+    outline: none;
+    padding: 5px 0px 5px 0px;
+}
+
+#bnt1 {
+    padding: 4px 3px 4px 3px;
+    background-color: #fc043e;
+    border: none;
+    color: #fff;
+}
+
+.conteiner .card {
+    width: 220px;
+    height: 250px;
+    background-color: #2a2a2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.527);
+}
+.conteiner .card .percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    
+}
+.conteiner .card .percent svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    
+}
+.conteiner .card .percent svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 5;
+    stroke: #191919;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.conteiner .card .percent svg circle:nth-child(1) {
+    stroke: #fc043e;
+    animation-delay: 0.01s;
+    stroke-dashoffset: 0;
+}
+.conteiner .card .percent svg circle:nth-child(2) {
+    transition: stroke-dashoffset 3s;
+    stroke: rgb(102, 102, 102);
+    stroke-dashoffset: calc(0 - (440 * 0) / 100);
+}
+
+.number {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.number h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.number p {
+    margin-top: 10px;
+    color: #fc043e;
+}

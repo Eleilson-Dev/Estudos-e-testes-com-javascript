@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+main {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: rgb(255, 0, 64);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.79);
+    padding: 10px;
+}
+.imc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40%;
+}
+.imc input {
+    outline: none;
+    border: none;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.568);
+}
+.bnts {
+    display: flex;
+    justify-content: space-between;
+}
+.bnts button {
+    width: 45%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.568);
+}
+#bnt-1 {
+    background-color: rgb(20, 220, 63);
+    color: #fff;
+}
+#bnt-2 {
+    background-color: rgb(65, 59, 60);
+    color: #fff;
+}
+.resultado {
+    margin-top: 10px;
+    height: 45%;
+    background: rgb(45, 42, 42);
+    border-radius: 10px;
+    padding: 10px;
+}
+.status {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 30px;
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.situação {
+    display: flex;
+    padding: 10px;
+    height: 70%;
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}

@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lampada {
+    width: 150px;
+    height: 220px;
+    background-image: url(imagens/apagada.jpg);
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.acesa {
+    width: 150px;
+    height: 220px;
+    background-image: url(imagens/acesa.jpg);
+    background-position: center;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #03112e;
+}
+
+button {
+    width: 300px;
+    padding: 20px;
+    border: none;
+    background-color: #0a1b3f;
+    border: 1px solid rgb(162, 10, 251);
+    box-shadow: 2px 5px 2px rgb(162, 10, 251);
+    transition: all 0.3s ease-in-out;
+}
+
+button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #ffff;
+}
+
+button:hover {
+    transform: translateY(-5px) translateX(-5px);
+    box-shadow: 10px 15px 10px rgb(162, 10, 251);
+}

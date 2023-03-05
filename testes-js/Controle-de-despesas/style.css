@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main {
+    padding: 1%;
+    width: 50%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.483);
+}
+
+.saldo-atual p {
+    color: rgb(83, 83, 250);
+    font-weight: 600;
+    font-size: 2em;
+    margin-bottom: 1%;
+}
+
+.valores {
+    display: flex;
+    padding: 2%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.483);
+}
+
+.valores .Receitas {
+    width: 50%;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.434);
+}
+
+.valores .Receitas p {
+    color: rgb(30, 223, 30);
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.valores .Despesas {
+    text-align: center;
+    width: 50%;
+}
+
+.valores .Despesas p {
+    color: red;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.transaçoes {
+    display: flex;
+    align-items: flex-end;
+    height: 8vh;
+    padding-bottom: 1%;
+    border-bottom: 1px solid black;
+    margin-bottom: 1%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.plus {
+    position: relative;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    align-items: center;
+    margin: 1%;
+    margin-left: 1%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.483);
+}
+
+.plus p {
+    width: 70%;
+    margin-left: 5%;
+    display: flex;
+}
+
+.plus::before {
+    position: absolute;
+    left: 99.1%;
+    content: "";
+    width: 6px;
+    height: 100%;
+    background-color: rgb(30, 223, 30);
+}
+
+.minus {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    align-items: center;
+    margin: 1%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.483);
+}
+
+.minus p {
+    width: 70%;
+    margin-left: 5%;
+}
+
+.minus::before {
+    position: absolute;
+    left: 99.1%;
+    content: "";
+    width: 6px;
+    height: 100%;
+    background-color: red;
+}
+
+.minus-velue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 5vh;
+    font-size: 1em;
+    margin-right: 2%;
+    font-weight: 600;
+}
+
+.plus-velue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 5vh;
+    font-size: 1em;
+    margin-right: 2%;
+    font-weight: 600;
+}
+
+.add-transactions {
+    display: flex;
+    align-items: flex-end;
+    height: 8vh;
+    padding-bottom: 1%;
+    border-bottom: 1px solid black;
+    margin-bottom: 1%;
+}
+
+#name-transaction {
+    width: 100%;
+    padding: 2%;
+    outline: none;
+}
+
+#name-transaction:focus {
+    border: 2px solid rgba(8, 206, 255, 0.801);
+}
+
+#value-transaction {
+    width: 100%;
+    padding: 2%;
+    outline: none;
+}
+
+#value-transaction:focus {
+    border: 2px solid rgba(8, 206, 255, 0.801);
+}
+
+form h3 {
+    margin-bottom: 2%;
+}
+
+form p {
+    margin-bottom: 1%;
+}
+
+input {
+    margin-bottom: 1%;
+}
+
+#bnt-add {
+    border: none;
+    padding: 2%;
+    width: 100%;
+    background-color: rgb(98, 43, 226);
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+li {
+    position: relative;
+}
+
+.fa-solid {
+    position: absolute;
+    top: 21.5%;
+    left: 1.5%;
+    color: #fff;
+    background-color: rgb(218, 46, 27);
+    padding: 1%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    main {
+        padding: 1%;
+        width: 90%;
+        margin-top: 1%;
+        margin-bottom: 5%;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.483);
+    }
+    .minus-velue {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 5vh;
+        font-size: 1em;
+        margin-right: 2%;
+        font-weight: 600;
+    }
+    .plus-velue {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 5vh;
+        font-size: 1em;
+        margin-right: 2%;
+        font-weight: 600;
+    }
+    .minus p {
+        width: 70%;
+        margin-left: 8%;
+    }
+    .plus p {
+        width: 70%;
+        margin-left: 8%;
+    }
+    .fa-solid {
+        position: absolute;
+        top: 24.5%;
+        left: 1.5%;
+        color: #fff;
+        background-color: rgb(218, 46, 27);
+        padding: 1%;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+}

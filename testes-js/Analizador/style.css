@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'kdam';
+    src: url(fontes/KdamThmorPro-Regular.ttf)format('truetype');
+}
+
+:root {
+    --font-principal: 'kdam';
+    --cor-0: #03e37a;
+    --cor-1: #17ade9;
+    --cor-2: #514869;
+    --cor-3: #142c32;
+    --cor-4: #000056;
+    --cor-5: #021A20;
+    --cor-6: rgb( 201, 206, 210);
+}
+
+* {
+    font-weight: bolder;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(133, 8, 8);
+}
+
+header {
+    font-family: var(--font-principal);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+section {
+    background-color: var(--cor-3);
+    border-radius: 10px;
+    padding: 15px;
+    width: 90%;
+    box-shadow: 0px 0px 10px var(--cor-4);
+}
+
+#Inicio {
+    font-family: var(--font-principal);
+    width: 70%;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 10px var(--cor-4);
+}
+
+p {
+    font-family: var(--font-principal);
+    color: #fff;
+}
+
+#flista {
+    font-family: var(--font-principal);
+    width: 50%;
+}
+
+.res {
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+#bnt {
+    font-family: var(--font-principal);
+    background: var(--cor-0);
+    border: none;
+    border-radius: 3px;
+    box-shadow: transparent;
+}
+
+#bnt2 {
+    font-family: var(--font-principal);
+    background: var(--cor-0);
+    border: none;
+    border-radius: 3px;
+    box-shadow: transparent;
+}

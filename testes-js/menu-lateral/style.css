@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+}
+main {
+    display: flex;
+    height: 100vh;
+}
+.conteiner-left {
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    transition: 0.5s ease-in-out;
+    background: #0c1022;
+}
+.conteiner-left ul li {
+    display: flex;
+    border: solid red;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0;
+    transition: width, 0.1s height, 0s ease-in-out;
+    transition-delay: 0s;
+}
+.conteiner-left ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.conteiner-left.active ul li {
+    opacity: 1;
+}
+.icon {
+    width: 100%;
+}
+.conteiner-left.active {
+    width: 400px;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+}
+.conteiner-left .ion-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    transition-delay: 0.2s;
+    color: #fff;
+}
+.conteiner-left.active .ion-icon{
+    transform: rotate(180deg);
+}
+.iconMoviment {
+    transition: 0.5s ease-in-out;
+}
+.conteiner-left.active .iconMoviment{
+    transform: translateX(calc(100% - 50px));
+}
+.conteiner-right {
+    border: solid blue;
+    width: 100%;
+}

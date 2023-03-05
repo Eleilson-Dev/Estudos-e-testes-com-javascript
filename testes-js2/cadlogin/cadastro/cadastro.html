@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="card">
+            <h1>Cadastrar</h1>
+            <div class="msg">
+                <div class="msgsucess"></div>
+                <div class="msgerror"></div>
+            </div>
+            <div class="label-float">
+                <input type="text" id="nome" placeholder="">
+                <label id="label-nome" for="nome">Nome</label>
+            </div>
+
+            <div class="label-float">
+                <input type="text" id="Usuario" placeholder="">
+                <label id="label-usurio" for="Usuario">Usuário</label>
+            </div>
+
+            <div class="label-float">
+                <input type="password" id="Senha" placeholder="">
+                <label id="label-senha" for="Senha">senha</label>
+                <div class="eye">
+                   <ion-icon class="bntPassword" name="eye-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="label-float">
+                <input type="password" id="confirmeSenha" placeholder="">
+                <label id="label-confirmarSenha" for="confirmeSenha">Confirmar Senha</label>
+                <div class="eye">
+                   <ion-icon class="bntPasswordConfirm" name="eye-outline"></ion-icon>
+                </div>
+            </div>
+
+            <div class="justify-center">
+                <button id="bntCad">CADASTRAR</button>
+            </div>
+
+        </div>
+    </div>
+     <script  type="module"  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script> 
+    <script  nomodule  src = "https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"> </script>
+    <script src="script.js"></script>
+</body>
+</html>
