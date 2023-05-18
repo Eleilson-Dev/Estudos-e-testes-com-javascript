@@ -24,6 +24,6 @@ app.get("/alunos", (req, res) => {
   return res.json(alunos);
 });
 
-app.listen(3000, () => {
-  console.log("Express startd at http://localhost:3000");
+app.listen(3001, () => {
+  console.log("Express startd at http://localhost:3001");
 });
