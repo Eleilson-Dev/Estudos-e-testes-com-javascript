@@ -9,14 +9,21 @@
   </head>
   <body>
     <form>
-      <input type="text" placeholder="Cliente" id="cliente" />
-      <input type="number" min="0" placeholder="Altura" id="altura" />
-      <input type="number" min="0" placeholder="Lado A" id="ladoA" />
-      <input type="number" min="0" placeholder="Lado B" id="ladoB" />
+      <input type="number" min="0" placeholder="Altura" id="altura" required />
+      <input type="number" min="0" placeholder="Lado A" id="ladoA" required />
+      <input type="number" min="0" placeholder="Lado B" id="ladoB" required />
       <input type="number" min="0" placeholder="Sobra" id="sobra" />
       <input type="number" min="0" placeholder="Quebrados" id="quebrados" />
       <button id="btnSub" type="submit">CALCULAR</button>
     </form>
+    <div class="res">
+      <ul id="resultado">
+        Resultado
+      </ul>
+      <div>Quebrados</div>
+      <div>Sobra</div>
+      <div id="total">Total:</div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
